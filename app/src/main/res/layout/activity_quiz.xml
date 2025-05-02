@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".QuizActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,19 +14,27 @@
         android:padding="24dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Flashcard History Quiz"
+            android:text="Question"
             android:textSize="24sp"
             android:textAlignment="center"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="24dp"/>
 
         <Button
-            android:id="@+id/startButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/trueButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Start Quiz"/>
+            android:text="true"
+            android:layout_marginBottom="16dp"/>
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/falseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="false"/>
+
+</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
